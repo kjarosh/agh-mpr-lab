@@ -3,5 +3,6 @@ from mpi4py import MPI
 import socket
 
 comm = MPI.COMM_WORLD
+
 print("hello world")
-print("my rank is: %d, at node %s"%(comm.rank, socket.gethostname()))
+print(f"my rank is: {comm.rank}, at node {socket.gethostname()}")
